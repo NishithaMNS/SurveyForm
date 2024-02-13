@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+   <title>Survey Form</title>
+   <head>
+     <link rel="stylesheet" href="surveystyle.css">
+     </head>
+     <body>
+       <h1 id="title">CuteAnimal Survey Form</h1>
+       <div id="para"><p id="description">Thank you for taking the time to help us find out the cutest animal</p></div>
+       <form id="survey-form"> 
+        <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></input></label>     
+        <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></input></label>
+        <label for="number" id="number-label">Number<input id="number" type="number" pattern="[0-9]" placeholder="Enter your age" min="1" max="100"></input></label>
+        <p>Which animal is the cutest?</p>
+        <select id="dropdown"> 
+          <option value="" disabled selected>Select one</option>
+          <option value="Dogs">Dogs</option>
+          <option value="Cats">Cats</option>
+          <option value="Rabbit">Rabbit</option>
+          <option value="Kangaroo">Kangaroo</option>
+        </select>
+        <p>Was your favourite animal included?</p>
+        <label for="yes" id="yes-label"><input type="radio" id="yes" value="yes" name="fav-animal" checked/> Yes</label>
+        <label for="no" id="no-label"><input type="radio" id="no" value="no" name="fav-animal"/> No</label>
+        <p>What makes your animal the cutest?</p>
+        <label><input type="checkbox" name="cute Face" value="cute" checked> Cute Face</label>
+        <label><input type="checkbox" name="smile" value="smile"> A big smile</label>
+        <label><input type="checkbox" name="friendly" value="friendly"> Friendly </label>
+        <label><input type="checkbox" name="fluffy" value="fluffy"> Fluffy</label>
+        <p>Suggest/Add any more animals and features that we have missed</p>
+        <label for="suggestion" id="suggestion-label"><textarea  placeholder="Add your suggestions here"></textarea></label>
+        <button id="submit" class="submit" type="submit"> Submit </button>
+      </form>
+     </body>
+</html>
